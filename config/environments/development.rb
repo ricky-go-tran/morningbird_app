@@ -7,6 +7,7 @@ Rails.application.configure do
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
+  config.hosts << "5ee9-2a09-bac5-d46c-e6-00-17-182.ngrok-free.app"
 
   # Do not eager load code on boot.
   config.eager_load = false
@@ -16,6 +17,7 @@ Rails.application.configure do
 
   # Enable server timing
   config.server_timing = true
+  config.action_dispatch.default_headers['X-Frame-Options'] = 'ALLOWALL'
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.

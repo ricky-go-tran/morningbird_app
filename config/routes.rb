@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'dashboard/index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
   root "dashboard#index"
+   get '/auth/shopify/credentials', to: 'shopify_auth#login'
+  get '/auth/shopify/redirect', to: 'shopify_auth#callback'
+  get '/redirect', to: 'shopify_auth#redirect'
 end
