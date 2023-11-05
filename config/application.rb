@@ -21,7 +21,7 @@ module MorningbirdApp
     ShopifyAPI::Context.setup(
       api_key: Rails.application.credentials.shopify_key,
       api_secret_key: Rails.application.credentials.shopify_secret_key,
-      host: 'https://5ee9-2a09-bac5-d46c-e6-00-17-182.ngrok-free.app',
+      host: 'https://81b3-2a09-bac5-d46d-16dc-00-247-80.ngrok-free.app',
       scope: 'read_orders,read_products',
       is_embedded: true,
       api_version: '2023-10',
