@@ -18,6 +18,8 @@ module MorningbirdApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.assets.paths << Rails.root.join('node_modules')
+
     ShopifyAPI::Context.setup(
       api_key: Rails.application.credentials.shopify_key,
       api_secret_key: Rails.application.credentials.shopify_secret_key,
